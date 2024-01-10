@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>TrendsTrails</h1>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+        <i id="cart" class="fa-solid fa-cart-shopping"></i>
+    </nav>
+    <div class="login-container">
+        <div class="login-h">
+            <h2>Login Now</h2>
+
+        </div>
+
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" >Login</button>
+        </form>
+        <p class="registration-link">
+            Not registered?
+            <a href="signup.html" style="text-decoration: none;">
+                Create an account
+            </a>
+        </p>
+    </div>
+    <script src="frontend.js"></script>
+    <script>
+        document.getElementById('cart').addEventListener('click', function () {
+            alert('Cart clicked!');
+            // Add more logic here for cart functionality
+        });
+    </script>
+</body>
+
+</html>

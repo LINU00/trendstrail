@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>TrendsTrails</h1>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+        <i id="cart" class="fa-solid fa-cart-shopping"></i>
+    </nav>
+    <div class="login-container">
+        <div class="login-h">
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="contact-container">
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="button" >Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="frontend.js"></script>
+    <script>
+        document.getElementById('cart').addEventListener('click', function () {
+            alert('Form Submitted!');
+            // Add more logic here for cart functionality
+        });
+    </script>
+</body>
+
+</html>
